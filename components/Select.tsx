@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     containerStart: {
         marginHorizontal: 40,
         backgroundColor: "#fafafa",
-        Color: "#212121",
+        color: "#212121",
         width: "50%",
         height: 50,
         borderRadius: 15,
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     containerStartTwo: {
         marginHorizontal: 40,
         backgroundColor: "#fafafa",
-        Color: "#212121",
+        color: "#212121",
         width: "50%",
         height: 50,
         borderRadius: 15,
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
 
     iconCaretdown: {
         fontSize: 15,
-        Color: "#212121",
+        color: "#212121",
         alignSelf: "flex-end",
         marginTop: -30,
         marginHorizontal: 20,

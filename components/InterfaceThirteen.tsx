@@ -1,9 +1,12 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 import EntryDate from './EntryDate';
 import Select from './Select';
+import Description from './Description';
+import AddMedia from './AddMedia';
+import Botton from './Botton';
 
 
 export default function InterfaceThirteen() {
@@ -12,14 +15,21 @@ export default function InterfaceThirteen() {
         <SafeAreaView style={styles.container}>
             <StatusBar backgroundColor="#ffffff" />
 
-            <View style={styles.subContainer}>
-                <AntDesign name="arrowleft" style={styles.iconArrowLeft} />
-                <Text style={styles.textEducation}>Education</Text>
-                <Feather name="trash" style={styles.iconTrash} />
-            </View>
+            <ScrollView>
 
-            <EntryDate />
-            <Select />
+                <View style={styles.subContainer}>
+                    <AntDesign name="arrowleft" style={styles.iconArrowLeft} />
+                    <Text style={styles.textEducation}>Education</Text>
+                    <Feather name="trash" style={styles.iconTrash} />
+                </View>
+
+                <EntryDate />
+                <Select />
+                <Description />
+                <AddMedia />
+                <Botton />
+
+            </ScrollView>
 
         </SafeAreaView>
     );
